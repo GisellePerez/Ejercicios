@@ -1,0 +1,33 @@
+h1{
+	font-size: 2.2em;
+	font-family: georgia;
+	
+}
+
+a{
+	font-family: calibri;
+	font-size: 0.9em;
+}
+
+#encabezado {
+	padding-left:120px;
+}
+
+#TextoPrincipal {
+	font-size: 1.2em;
+	font-family:georgia; 
+	padding-right: 500px;
+	line-height: 30px;
+}
+
+#PieFoto1, #PieFoto2 {
+	font-family: Arial;
+	    font-size: 17px;
+    line-height: 27px;
+
+}
+
+#fechayhora {
+	color: gray;
+	font-family: Arial;
+}
