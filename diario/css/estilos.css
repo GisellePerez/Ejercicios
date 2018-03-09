@@ -1,7 +1,14 @@
+body {margin-left: 4em;}
+
+header{
+	padding-left:6em;
+}
+
 h1{
 	font-size: 2.2em;
 	font-family: georgia;
-	
+	padding-left:1em;
+	padding-right:3em;
 }
 
 a{
@@ -9,25 +16,39 @@ a{
 	font-size: 0.9em;
 }
 
-#encabezado {
-	padding-left:120px;
-}
-
 #TextoPrincipal {
 	font-size: 1.2em;
 	font-family:georgia; 
-	padding-right: 500px;
+	margin-right: 27em;
 	line-height: 30px;
-}
-
-#PieFoto1, #PieFoto2 {
-	font-family: Arial;
-	    font-size: 17px;
-    line-height: 27px;
 
 }
 
 #fechayhora {
 	color: gray;
 	font-family: Arial;
+}
+
+ul{
+   list-style-type: none;
+}
+
+li{
+   display: inline;
+}
+.PieFoto { 
+	font-family: Arial;
+	font-size: 17px;
+    line-height: 27px;
+    margin-right: 26em;
+}
+
+.navegacion, .hora {
+	font-weight: bold;
+}
+
+.capital {
+	font-size: 4em;
+	font-family: arial;
+	font-weight: bold;
 }
