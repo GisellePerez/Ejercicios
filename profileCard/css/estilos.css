@@ -1,0 +1,89 @@
+ * {margin: 0 auto;
+
+
+ }
+
+ @import url ('https://fonts.googleapis.com/css?family=Roboto');
+
+body{	
+	font-family: 'Roboto', sans-serif;
+	border: solid #bac8ff 0.1em;
+	max-width: 300px;
+	height:450px; 
+}
+
+	/* color rojo f72929*/
+
+footer{
+	text-align:center;
+	max-width: 230px;
+	margin: 2.5em auto;
+}
+
+footer img {
+	height: 16px;
+	width: 16px;
+	display:inline-block;
+	margin:1.1em;
+}
+
+h1{
+	font-weight: light;
+	color: #f72929;
+	text-align: center;
+	font-size: 25px;
+	padding-top:1.5em;
+}
+
+h2{	
+	font-size:16px;
+	font-weight: light;
+	color: #ccc;
+	text-align: center;
+}
+
+p{
+	color: #ccc;
+	text-align:center;
+	max-width:230px;
+	font-size:14px;
+}
+
+header{
+	text-align: center;
+	margin: 2em;
+	margin-bottom: 3em;
+
+}
+
+header img{
+	text-align: center;
+	height: 100px;
+	width: 100px;
+
+}
+
+.relative1{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.relative2{
+	position: absolute;
+ 	display: inline-block;
+ 	height: 20px;
+	width: 20px;
+}
+
+#contenedor{
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+#estado{
+	position: absolute;
+	bottom: 12px;
+	left:70px;
+}

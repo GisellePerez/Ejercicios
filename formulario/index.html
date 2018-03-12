@@ -10,9 +10,55 @@
 	<h1> Untitled Page </h1>
 
 	<div class="formulario">
-		<p>Nombre</p><input type=“text” name=“nombre” >
-		<p>Apellido</p><input type=“text” name=“apellido” >
-		<p>Email</p><input type=“text” name=“email” >
+		<form name="Formulario" action="" method="">
+			<div class="completar">
+				<label for="nombre">Nombre</label>
+				<input type="text" name="Escribe tu nombre" placeholder="Escriba su nombre">
+
+				<label for="apellido">Apellido</label>
+				<input type="text" name="Escribe tu apellido" placeholder="Escriba su apellido">
+
+				<label for="email">Email</label>
+				<input type="text" id="nombre" name="Escribe tu email" placeholder="Escriba su email">
+			</div>
+
+			<div class="genero">
+				<label for="genero">Género</label>
+				<br>				
+				<input type="radio" name="genero" value="f">Femenino
+				<input type="radio" name="genero" value="m">Masculino
+			</div>
+
+			<div class="nacionalidad">
+				<label for="nacionalidad">Nacionalidad</label>
+				<select name="select"> 
+					<option value="Argentina">Argentina</option>
+					<option value="Brasil">Brasil</option>
+					<option value="Ecuador">Ecuador</option>
+					<option value="Perú">Perú</option>
+					<option value="Uruguay">Uruguay</option>					
+				</select> 				
+			</div>
+
+			<div class="intereses">
+				<label for="intereses">Temas que le interesan</label>
+				<br>
+				<input type="checkbox" name="Infraestructura" value="1">Infraestructura
+				<br>
+				<input type="checkbox" name="Programación web" value="2">Programación web
+				<br>
+				<input type="checkbox" name="Programación mobile" value="3">Programación mobile
+				<br>
+				<br>
+				<input type="checkbox" name="Acepte los términos y condiciones">Acepto los términos y condiciones				
+			</div>
+
+		</form>
+
+		<div class="botones">
+			<input type="reset" value="Cancelar">
+			<input type="submit" value="Guardar">
+		</div>
 	</div>
 
 </body>

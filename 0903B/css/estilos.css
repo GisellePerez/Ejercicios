@@ -1,0 +1,128 @@
+*{
+	width:600px;
+	margin: 0 auto;
+}
+
+header{
+	background: black;
+	vertical-align: center;
+	margin:1em;
+	height: 111px;
+	width: 600px;
+	
+}
+
+header img, .blue img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: center;
+
+}
+
+#img1 {
+	
+	padding: 1em;
+}
+
+#img2 {
+	float: right;
+	padding: 1em;
+}
+
+.blue img {
+	text-align: right;
+}
+
+h1 {
+	color: white;
+	display: inline;
+	vertical-align: center;
+	text-align: center;
+	top:10px;
+	left: 50px;
+
+}
+
+nav{
+	width:590px;
+	/*background:red;*/
+	text-align: center;
+	padding: 0.3em;
+	margin:1em;
+	
+}
+
+nav ul a {
+	color: white;
+}
+
+nav ul li{	
+	list-style-type: none;
+	display: inline;
+	background: orange;
+	text-align: center;
+	font-family: Tahoma;
+	font-size:1em;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	margin-right: 1%;
+	margin-left: 1%;
+	vertical-align: center;
+}
+
+.pink{
+	background:pink;
+	margin: 0 auto;
+	margin:1em;
+
+}
+
+.pink article{
+	background:pink;
+	display: inline-block;
+	width: 45%;
+	height:20em;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin: 0 auto;
+
+}
+
+.blue{
+	background:blue;
+	text-align: right;
+	vertical-align: center;
+	margin:1em;
+
+}
+
+.blue img{
+	padding: 1em;
+}
+
+.green{
+	background:green;
+	margin:1em;
+	
+	
+    
+}
+
+.green article{
+	display: inline-block;
+	width: 30%;
+	height:20em;
+	
+
+}
+
+footer {
+	background: yellow;
+	height:6em;
+	margin:1em;
+}
+

@@ -1,3 +1,8 @@
+
+*{
+	font-size: 12px;
+}
+
 .formulario {
 	border:solid;
 	margin-left: 2em;
@@ -6,13 +11,56 @@
 	margin-bottom: 2em;
 	padding-bottom: 2em;
 	padding-right:2em;
-	padding-top: 2em;
-	padding-left: 2em;
+	padding-top: 5em;
+	padding-left: 4em;
+	height: 500px;
+
 }
 
 h1 {
 	font-family: Arial;
 	font-weight: bold;
-	margin-left: 1em;
+	margin-left: 0.5em;
+	font-size: 40px;
+}
 
+
+.genero input{
+	display: inline-block;
+	margin: 1em 0;
+	margin-right: 0.5em;
+	margin-bottom: 1.5em;
+}
+
+.completar input {
+	padding: 0.2em;
+	margin:1em 0;
+	display: block;
+	
+}
+
+
+.nacionalidad select {
+	margin: 1em 0;
+	margin-right: 0.5em;
+	display: block;
+	margin-top: 1em;
+}
+
+
+.botones{
+	display: inline-block;
+	margin: 1em 0;
+}
+
+.genero {
+	font-family: arial;
+}
+
+.nacionalidad {
+	font-family: arial;
+	}
+
+.intereses{	
+	font-family: arial;
 }
