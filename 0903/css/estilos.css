@@ -27,6 +27,9 @@ h1{
 	color: white;
 	text-align: center;
 	display: inline-block;
+	margin-left: 20%;
+	margin-right: 20%;
+
 }
 
 #foto2 {
@@ -85,4 +88,8 @@ footer {
 	background: yellow;
 	height: 100px;
 	width: 91.3%;
+}
+
+nav a: hover {
+	color: #ffec99;
 }

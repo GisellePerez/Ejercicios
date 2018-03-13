@@ -60,6 +60,8 @@ header img{
 	text-align: center;
 	height: 100px;
 	width: 100px;
+	webkit-border-radius: 50%;
+	border-radius: 50%;
 
 }
 
@@ -67,6 +69,9 @@ header img{
 	position: relative;
 	display: inline-block;
 	text-align: center;
+	webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: solid #f1f3f5 6px;
 }
 
 .relative2{
@@ -74,6 +79,7 @@ header img{
  	display: inline-block;
  	height: 20px;
 	width: 20px;
+	border: solid #f8f9fa 3.5px;
 }
 
 #contenedor{

@@ -1,0 +1,65 @@
+*{
+	margin: 0 auto;
+}
+
+h2{
+	font-size: 16px;
+}
+
+header img{
+	height: 60px;
+	width: 60px;
+}
+
+.logo, .banner, footer, nav, .sideBar, .bodyArea {
+	background: #ccc;
+	padding-top: 10px;
+}
+
+.logo, .banner, nav {
+	width: auto;
+	height: 2em ; /*si pongo un porcentaje le tengo que decir con respecto a qué*/ 
+	margin: 10px; 
+}
+.logo{
+	vertical-align: center;
+	height:4em;
+	padding:0.5em;
+}
+
+.banner	{
+	padding: 50px;
+}
+
+aside{
+	width: 28% ;
+	height: 6em;
+}
+
+
+footer {	
+	width: auto;
+	height: 3em;
+	position: relative;
+	margin: 10px;
+	top:-106px; 
+}
+
+.container{
+	position: relative;
+}
+
+.bodyArea	{
+	width: 69.5% ;
+	height: 6em;
+	position: relative;
+  	left:197px;
+  	top: -106px;	
+ }
+
+ .sideBar {
+ 	position: relative;
+ 	right:481px ;
+ }
+
+ /*se puede usar display inline block para el sidebar y el bodyarea*/
