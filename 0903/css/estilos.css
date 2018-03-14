@@ -1,5 +1,5 @@
 *{
-	margin:1%;
+	margin:1% ;
 }
 
 header{
@@ -13,7 +13,6 @@ header{
 header img, .azul img {
 	width: 80px;	
 	height: 80px;
-
 }
 
 #foto1 {
@@ -73,6 +72,7 @@ nav ul li {
 	width: 90%;
 	text-align: right;
 	padding-right: 1%;
+	height:100px;
 }
 
 .verde article {
@@ -90,6 +90,62 @@ footer {
 	width: 91.3%;
 }
 
-nav a: hover {
-	color: #ffec99;
-}
+
+	/* MEDIA QUERIES */
+
+@media all and (max-width: 480px) {
+
+	.continer {
+		width: 100%;
+	}
+	
+	header {
+		width: 100%;
+		margin: 0;
+	}
+
+	header #foto2 {
+		display: none;
+	}
+
+	nav{
+		position: fixed;
+		text-align:left;
+		top:20%;
+		right:5%;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 0;
+		font-size: 25px;
+		padding: 3%; 
+	}
+	
+	.rosa article {
+		display: block;
+		width: 100%;
+		height: 480px;
+	}
+
+	/* Yo lo había sacado pero en realidad los 
+	dos rosas pierden los márgenes y se pegan.
+		
+	 #article2 {
+		display: none;
+	} */
+
+	.verde article{
+		display:none;
+	}
+
+	.azul, footer {
+		width: 100%;
+		margin:0;
+	}
+
+	.azul img {
+		display: none;
+	}
+
+}	

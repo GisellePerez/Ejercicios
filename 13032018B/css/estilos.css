@@ -11,6 +11,7 @@ header, .main, .boxes, footer {
 	margin:1em auto;
 }
 
+
 .main{
 	padding: 2em;
 }
@@ -75,4 +76,10 @@ header p {
 footer {
 	height: 5em;
 	padding:2em;
+}
+
+@media ( max-width: 480px; ) {
+	.gris {
+		background: pink;
+	}
 }
