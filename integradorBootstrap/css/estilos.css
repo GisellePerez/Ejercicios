@@ -1,0 +1,107 @@
+.altas {
+	margin-top:3em;
+}
+
+.negro1 {
+	background: black;
+	height: 400px;
+	
+}
+
+.gris1 {
+	background: #f1f3f5;
+	height: 400px;
+	
+}
+
+.amarillo1 {
+	background: yellow;
+	height: 400px;
+	
+}
+
+.cian1 {
+	background: cyan;
+	height: 400px;
+	
+}
+
+.verde1{
+	background: #33ff00;
+	height: 400px;
+	
+}
+
+.magenta1{
+	background: magenta;
+	height: 400px;
+	
+}
+
+.rojo1 {
+	background: red;
+	height: 400px;
+	
+}
+
+.azul1{
+	background: blue;
+	height: 400px;
+	
+}
+
+.negro2 {
+	background: black;
+	height: 40px;
+	
+}
+
+.negro3 {
+	background: black;
+	height: 40px;
+	
+}
+
+.azul2 {
+	background: blue;
+	height: 40px;
+	
+}
+
+.magenta2 {
+	background: magenta;
+	height: 40px;
+	
+}
+
+.cian2  {
+	background: cyan;
+	height: 40px;
+}
+
+.blanco2 {
+	background: #f1f3f5;
+	height: 40px;
+	
+}
+
+.negro4{
+	background: black;
+	height: 60px;
+	
+}
+
+.gradiente1 {
+	height: 60px;
+	background:-webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.gradiente2 {
+	height: 60px;
+	background:-webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.gradiente3 {
+	height: 60px;
+	background:-webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 16%, rgba(66,66,66,1) 17%, rgba(102,102,102,1) 32%, rgba(71,70,71,1) 32%, rgba(117,117,117,1) 47%, rgba(135,133,135,1) 47%, rgba(168,168,168,1) 63%, rgba(181,198,208,1) 63%, rgba(212,212,212,1) 81%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
+}

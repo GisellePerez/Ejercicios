@@ -1,0 +1,21 @@
+
+.col-md-4 {
+	height: 264px;
+	width:264px;
+	margin:0.2em;
+}
+
+.rojo {
+	background: pink;
+
+
+}
+
+.gris {
+	background: gray;
+}
+
+img {
+	
+	margin-left:-0.9em;
+}
