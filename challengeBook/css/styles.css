@@ -1,0 +1,430 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	font-family: 'Indie Flower', cursive;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+nav {
+	margin: 1em 0;
+}
+
+nav ul {
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: #f03e3e;
+}
+
+.banner-img {
+	width:25%;
+}
+
+.banner img {
+	width: 98%;
+	height: 98%;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-around;
+	margin: 1em 0; 
+}
+
+.galerias {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+}
+
+.galerias article {
+	width: 32%;
+	position: relative;
+}
+
+.foto-gal img {
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.galerias article .botones {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.galerias input {
+	padding: 0.5em 3em;
+	border-radius: 20px;
+	background: white;
+	color: black;
+	border: 0;
+}
+
+.galerias input:hover{
+	background:#f03e3e;
+	color: white;
+}
+
+.middle {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 0;
+	margin-top: 2em;
+}
+
+.middle .video {
+	width: 70%;
+}
+
+.middle iframe {
+	width: 95%;
+}
+
+.middle .video p {
+	color: gray;
+	font-weight: bold;
+}
+
+
+.middle .perfil {
+	width: 28%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0.2em;
+}
+
+.perfil img {
+	height:130px;
+	width:130px;
+	border-radius: 50%;
+	margin-top: 0.5em;
+}
+
+.perfil .rosa {
+	background:#ffe3e3;
+	height:25px;
+
+}
+ 
+.perfil .rosa a {
+	text-decoration: none;
+	color:black;
+}
+
+.perfil .rosa a:hover {
+	font-weight: bold;
+}
+
+h4 {
+	font-weight:bold;
+}
+
+/*.entrada {
+	margin:0 auto;
+	height: 200px;
+}*/
+
+.recetaPic{
+	width:45%;
+	height: 100%;	
+}
+
+.recetaPic img {
+	height: auto;
+	width: 90%;
+	border-radius: 20px;
+}
+
+h3{
+	font-weight: bold;
+	margin: 0.2em 0;
+}
+
+.recetaInfo {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 1em;
+	height: 100%;	
+}
+
+.recetas {
+	margin: 0 auto;
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+	width:70%;
+	height: 200px;
+	margin-top: 2em;
+}
+
+.gris img {
+	height: 12px;
+	width:12px;
+}
+
+.gris	{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: gray;
+}
+
+.recetas .entrada {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+}
+
+.gris .derecha .likes, .gris .derecha .comments, .gris .derecha .share {
+	margin: 0 0.5em;
+	display: flex;
+}
+
+.gris .derecha {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.botonReceta input {
+	margin:0.2;
+	margin-left: 1em;
+	text-align: center;
+	padding: 0.6em 3em;
+	background: pink;
+	border: 0;
+	border-radius: 5px;
+
+}
+
+.botonReceta input:hover {
+	background: #f03e3e;
+	color:white;
+}
+
+footer {
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 4em;
+}
+
+
+footer .redes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.redes a {
+	text-decoration: none;
+	color: black;
+}
+
+.redes a:hover{
+	font-weight: bold;
+}
+
+footer h2 {
+	text-align: center;
+	margin: 2em 0;	 
+}
+
+hr {
+	
+	margin: 3em auto;
+	width: 70%;
+}
+
+/*** HOVER BANNR ***/
+
+.banner-img {
+	position: relative;
+	overflow:hidden;
+}
+.datos {
+	font-size: 12px;
+}
+
+.frase {
+	
+	font-size: 16px;
+}
+
+.texto {
+	position: absolute;
+	bottom:100%;
+	width: 98%;
+	height: 30%;
+	background:#f03e3e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: white;
+	padding: 1.5em;
+	/*transition: all 100ms;*/
+}
+
+.banner-img:hover .texto {
+	bottom:2%;
+}
+
+/*** QUERIES ***/
+
+@media screen and (max-width: 480px){
+
+	.container, .banner, .galerias, .middle, .recetas  {
+		width: 100%;
+	}
+
+	.banner {
+		flex-direction: column;
+	}
+	
+	.banner-img {
+		width: 100%;
+	}
+	
+	.banner img {
+		width: 100%;
+	}
+	 
+	.texto {
+		width: 100%;
+	}
+
+	.datos{
+		font-size: 16px;
+	}
+	
+	.frase {
+		font-size: 24px;
+	}
+
+	.banner-img:hover .texto {
+		bottom:0;
+	}
+	
+	.dos {
+		display:none;
+	}
+
+	/**galerias**/
+	
+	.galerias {
+		flex-direction: column;
+	}
+	
+	.galerias article {
+		width: 100%;
+		margin: 0.5em 0;
+	}
+
+	.galerias input {
+		font-size: 30px;
+	}
+	
+	/**middle**/
+
+	.middle {
+		margin:1em 0;
+	}
+
+
+	.middle .video {
+		display:none;
+	}
+
+	.middle .perfil {
+		width: 100%;
+		margin:0;
+	}
+
+	.rosa p, .rosa a {
+		vertical-align: middle;
+		padding: 0.3em 0;
+	}
+
+	/**recetas**/
+
+
+	.recetas .entrada {
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: space space-around;
+		justify-content: space-between;
+		margin-bottom: 10em;
+		
+	}
+
+	.recetas .recetaPic  {
+		width: 100%;
+
+	}
+
+	.recetaPic img{
+		height: 100%;
+		width: auto;
+		margin-bottom: 2em;
+	}
+
+	.recetas .recetaInfo {
+		width: 100%;
+	}
+
+	.izquierda, .derecha {
+		width: 50%;
+	}
+
+	.contenido {
+		margin: 2em 0;
+	}
+
+
+
+
+
+
+
+
+}
+
+
+
+
