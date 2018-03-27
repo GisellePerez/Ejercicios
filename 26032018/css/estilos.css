@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background: gray;
+}
+.top {
+  padding: 10px;
+}
+.top div {
+  height: 200px;
+  display: inline-block;
+  width: 49%;
+}
+.top .div-peru {
+  background: peru;
+  margin-right: 10px;
+}
+.top .div-peru:hover {
+  background-color: plum;
+}
+.top .div-yellow {
+  background: yellow;
+}
+.top .div-yellow:hover {
+  background-color: palegreen;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .iguales {
+  background: pink;
+  height: 150px;
+  width: 49%;
+  padding: 0;
+}
+.middle .iguales:hover {
+  background: #ff8787;
+}
+.bottom p {
+  padding: 10px;
+  font-family: sans-serif;
+  background: #e5dbff;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .top {
+    display: block;
+  }
+  .top div {
+    width: 100%;
+    padding: 10px;
+  }
+  .top .div-peru {
+    margin-bottom: 10px;
+  }
+  .middle {
+    padding: 10px 10px 5px 10px;
+    flex-direction: column;
+    align-items: space-around;
+    padding: 10px;
+  }
+  .middle .iguales {
+    width: 100%;
+    padding: 10px;
+  }
+  .middle #uno {
+    margin-bottom: 10px;
+  }
+}
