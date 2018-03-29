@@ -1,3 +1,4 @@
+@ruta Img = "images/fondo.png";
 * {
   box-sizing: border-box;
 }
@@ -49,10 +50,8 @@
   .container {
     width: 100%;
   }
-  .top {
-    display: block;
-  }
   .top div {
+    display: block;
     width: 100%;
     padding: 10px;
   }

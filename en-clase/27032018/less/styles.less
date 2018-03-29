@@ -1,0 +1,55 @@
+@colorA:blue;
+@colorB:green;
+@colorC:red;
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.size{
+	width: 200px;
+	height: 200px;
+}
+
+.container {
+
+	display: flex;
+	justify-content: center;
+	padding:10px;
+
+	div {
+		.size;
+		.circle;
+	}
+}
+
+#blue,#green {
+		margin-right:1px;
+}
+
+#blue {
+	background: @colorA;
+	&:hover{
+		background:lighten(@colorA,30%);
+	}
+}
+
+#green {
+	background: @colorB;
+	&:hover{
+		background:lighten(@colorB,30%);
+	}
+}
+
+#red {
+	background: @colorC;
+	&:hover{
+		background:lighten(@colorC,30%);
+	}
+}

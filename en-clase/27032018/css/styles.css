@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.circle {
+  border-radius: 50%;
+}
+.size {
+  width: 200px;
+  height: 200px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.container div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#blue,
+#green {
+  margin-right: 1px;
+}
+#blue {
+  background: blue;
+}
+#blue:hover {
+  background: #9999ff;
+}
+#green {
+  background: green;
+}
+#green:hover {
+  background: #1aff1a;
+}
+#red {
+  background: red;
+}
+#red:hover {
+  background: #ff9999;
+}
