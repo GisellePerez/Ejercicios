@@ -52,7 +52,7 @@ coinciden con los valores "Belen" y "Alegre"*/
 nombre = "Belen";
 apellido = "Alegre";
 /*bienvenida = "Bienvenida"; 	no la establecemos como variable global por el scope*/
-console.log(bienvenida);
+/*console.log(bienvenida);*/
 
 if(nombre=="Belen" && apellido=="Alegre") {
 
@@ -60,6 +60,6 @@ if(nombre=="Belen" && apellido=="Alegre") {
 	console.log(bienvenida);
 	/*declaraos la variable local, dentro del scope y dejamos nombre y apellido solas como globales*/
 }
-
+/*
 console.log(bienvenida);
-bienvenida=" ";
+bienvenida=" "; */

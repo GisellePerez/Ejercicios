@@ -1,0 +1,94 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: verdana;
+}
+
+header {
+	width: 100%;
+	height:80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #a9e34b;
+	padding: 1em;
+	position: fixed;
+	z-index: 2;
+}
+
+.buscador #buscar {
+	margin-right: 0.3em;
+	padding: 6px;
+	color: #343a40;
+}
+
+.buscador #botonTop {
+	padding: 6px 12px;
+}
+
+
+.breadcrumbs {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.breadcrumbs a, .breadcrumbs span, .breadcrumbs p {
+	margin-right: 0.3em;
+}
+
+.buscador {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.libros {
+	position: absolute;
+	top:90px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.libros article{
+	width: 23%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 2em;
+	border: 1px solid #e9fac8;
+	margin: 0.5em;
+	overflow: hidden;
+}
+
+.libros article:hover {
+	 -webkit-transform:scale(1.03);
+	 transform:scale(1.03);
+	 transition: all 0.3s;
+
+}
+
+.libros article .artPic img{
+	width: auto;
+	height:200px;
+	margin-bottom: 0.5em;
+}
+
+article .info {
+	margin-bottom: 0.5em;
+	color: #495057;
+}
+
+.artBoton input {
+	padding: 8px 14px;
+	border:none;
+	border-radius: 5px;
+	background:#a9e34b;
+	color: white;
+	font-weight: bold;
+}
+
+.artBoton input:hover {
+	background: #66a80f;
+}
