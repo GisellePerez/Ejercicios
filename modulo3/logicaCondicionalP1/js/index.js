@@ -238,56 +238,6 @@ var x,y,z,w;
 	}
 
 
-//PARTE2 ejercicio 1 
-/*
-
-var premium = false
-var valorProductoX = 100
-var puntos = 50
-var PesoCanje
-var peso=5
-
-
-if (valorProductoX == puntos) {
-	console.log("Canje directo");
-}
-
-if (puntos >= valorProductoX / 2 && premium == false) {
-	console.log("Tiene 50% del valor o más. Cada peso equivale a 3 puntos");
-	PesoCanje = peso*3;
-	console.log("Pesos: "+peso+ " - Puntos(canjeados): "+PesoCanje);
-	
-}
-
-if (puntos >= valorProductoX / 2 && premium == true) {
-	console.log("Tiene 50% del valor o más y es PREMIUM. Cada peso equivale a 5 puntos")
-	PesoCanje = peso*5;
-	console.log("Pesos: "+peso+" - Puntos(canjeados): "+PesoCanje);	
-}
-
-// otra opcion hecha en clase
-
-var x = 100
-var puntos = 50
-var premium = true
-
-
-if (puntos>=x) {
-
-	console.log("Puede retirar el producto");
-
-} else if (puntos*2 >= x){
-
-	var diferencia = x - puntos;
-
-	if (premium){
-		var monto = diferencia / 5;
-		console.log("Total a pagar: "+monto)
-	}else{
-		monto = diferencia / 3;
-		console.log("Total a pagar: "+monto)
-	}
-}
 */
 
 // 7 
