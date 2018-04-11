@@ -1,4 +1,5 @@
-var datosPersonales = ["Pepa","Holandesa","Me gustan los muffins"]
+var entradas = []; /*acá se cargan las entradas*/
+var datosPersonales = ["Pepa","Holandesa","Me gustan los muffins"];
 
 function cargarDatosPersonales (datosPersonales) {
 	var nombre = document.createElement('h1');
@@ -17,8 +18,6 @@ function cargarDatosPersonales (datosPersonales) {
 	dpDiv.appendChild(resumen);
 }
 
-
-cargarDatosPersonales(datosPersonales);
 
 // ------
 
@@ -62,8 +61,6 @@ function cargarListaImagenes(lista,padre){
 	
 }
 
-cargarListaImagenes(amigos,panelAmigos);
-
 
 /*cada elemento del muro es un div con una imagen y texto.
 Vamos a appendear elementos en una lista. Misma img y mismo texto*/
@@ -92,61 +89,88 @@ cargarListaMuro(arrayMuro);
 
 var muro = document.getElementById('muro'); /*parte de la estrutura del html*/
 
-function cargarMuro(m)/*llenamos con cualquier como poner x, cuando llamo SI pongo la var muro*/{
+function cargarMuro(m){ /*llenamos con cualquier cosa como poner x, cuando llamo SI pongo la var muro*/
 
-	var ul = document.createElement('ul'); /*la estoy creando yo. 
-											Va fuera del for porque solo necesito una lista*/
-	/*cada li va a contener una im y un texto*/
+	/*para que no me quede una lista vacía, necesito un condicional
+	que me diga que si tengo ntradas cargo la lista y si no entradas no haga nada*/
+	var ul = document.createElement('ul'); 
+		ul.setAttribute('id','posts');
 
-	for(i=0; i < 3; i++){
+	if(entradas.length > 0){
 
-		var div = document.createElement('div')
-		var li = document.createElement('li');
-		var img = document.createElement('img');
+		m.innerHTML="";
 
-		img.src = "img/amigo3.jpg";
-		img.classList.add('thumb');/*permite agregarle una clase al nodo que creé
-									entonces en el css le doy tamaño*/
+			for(i=0; i < entradas.length ; i++){
 
-		div.classList.add('muroPosteos');
-		
-		li.appendChild(img);
-		var texto = document.createElement('p');
-		texto.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consectetur adipisicing doloribus!";
+			var div = document.createElement('div');
+			var li = document.createElement('li');
+			var img = document.createElement('img');
 
-		li.appendChild(texto);
-		div.appendChild(li);
-		ul.appendChild(div);
+			img.src = "img/amigo3.jpg";
+			img.classList.add('thumb');
+			div.classList.add('muroPosteos');
+			
+			li.appendChild(img);
+			var texto = document.createElement('p');
+			texto.textContent = entradas[i];
+
+			li.appendChild(texto);
+			div.appendChild(li);
+			ul.appendChild(div);
+
+		}
 
 	}
-
 	m.appendChild(ul);
 }
 
-cargarMuro(muro);
 
-//---- formulario
-
-var formDiv = document.getElementById('formulario')
-
-function cargarFormulario (f) {
-	
-	var form = document.createElement('form');
-	form.classList.add('formStyle')
-	var formInput = document.createElement('textarea');
-	formInput.type = "text";
-	formInput.placeholder = "¿Qué onda?";
-	var botonDiv = document.createElement('div');
-	botonDiv.classList.add('botonStyle');
-	var boton = document.createElement('input');
-	boton.type = "submit";
-	boton.value = "Publicar";
+/**
+* Cargar entradas desde el formulario
+* @params no params
+* void
+**/
 
 
-	form.appendChild(formInput);
-	botonDiv.appendChild(boton)
-	formDiv.appendChild(form);
-	formDiv.appendChild(botonDiv);
+
+
+function publicar(){ 
+
+	/*tengo que traer el valor del formulario con esta funcion*/
+	var lista = document.getElementById('posts');
+	var entrada = document.getElementById('entrada'); /*me traigo el nodo*/
+	var texto = entrada.value; /*una vez que me traigo el nodo, me trae el texto*/
+	entradas.push(texto);
+
+	/*voy a cargar las entradas dentro de la funcion publicar*/
+
+			var div = document.createElement('div');
+			var li = document.createElement('li');
+			var img = document.createElement('img');
+
+			img.src = "img/amigo3.jpg";
+			img.classList.add('thumb');
+			div.classList.add('muroPosteos');
+			
+			li.appendChild(img);
+			var t = document.createElement('p');
+			t.textContent = texto[entradas.length-1];
+
+			li.appendChild(t);
+			div.appendChild(li);
+	 
+	console.log(texto);
+	//cargarMuro(muro);
+
+	/*hasta acá agregué a entradas mi texto del input.
+	Tenemos que arreglar la funcion cargar muro para que se publiquen las cosas
+	hay que VINCULAR el EVENTO DE BOTON al momento de hacer click y que publique*/
+
 }
 
-cargarFormulario(formDiv);
+cargarDatosPersonales(datosPersonales);
+cargarListaImagenes(amigos,panelAmigos);
+cargarMuro(muro);
+
+var btnEnviar = document.getElementById('enviar');
+btnEnviar.addEventListener('click',publicar);
