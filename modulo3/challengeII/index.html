@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>challengeII</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<form action="" id="formulario">
+		<div id="obligatorios">
+			<div>
+				<label for="nombre" id="nombre">Nombre*</label>
+				<input type="text" name="nombre" placeholder="Escriba su nombre" class="obligatorio">
+				<label class="error obLabel"></label>
+				<!-- No pisa a no ser que modifique algo del anterior -->
+			</div>
+			<br>
+			<div>
+				<label for="apellido" id="apellido">Apellido*</label>
+				<input type="text" name="apellido" placeholder="Escriba su apellido" class="obligatorio">
+				<label class="error obLabel"></label>
+			</div>
+			<br>
+			<div>
+				<label for="fechaNacimiento" id="fechaNacimiento">Fecha de nacimiento*</label>
+				<input type="date" name="fechaNacimiento">
+				<label class="error obLabel"></label>
+			</div>			
+			<br>
+			<label for="nacionalidad" id="nacionalidad">Nacionalidad*</label>
+				<select name="select" id="paisesLista"> 
+					<option value="" disabled selected>Seleccione país de origen...</option>			
+				</select> 	
+			<br>
+			
+			<label for="tipoDNI" id="tipoDNI">Tipo de doumento*</label>
+				<select name="select" id="tipoDoc"> 
+					<option value="" disabled selected>Seleccione tipo documento...</option>
+				</select> 	
+
+			<label for="nroDoc">Número de documento*</label>
+			<input type="text" name="nroDoc" id="nroDoc" placeholder="Ingrese su documento...">
+			<label class="docInvalido error"></label>
+			<br>
+			
+		</div>
+
+		<div id="dire">
+			<div>
+				<label for="calle" id="calle">Calle*</label>
+				<input type="text" name="calle" placeholder="Ingrese su calle" class="obligatorio">
+				<label class="error obLabel"></label>
+			</div>
+
+			<div>
+				<label for="numero" id="nro">Número</label>
+				<input type="text" name="numero" placeholder="Número"  class="obligatorio">
+				<label class="error obLabel"></label>
+			</div>
+
+			<div>
+				<label for="piso" id="piso">Piso</label>
+				<input type="text" name="piso" placeholder="Piso"  class="obligatorio">
+				<label class="error obLabel"></label>
+			</div>
+
+			<div>
+				<label for="depto" id="depto">Depto.</label>
+				<input type="text" name="depto" placeholder="Depto"  class="obligatorio">
+				<label class="error obLabel"></label>
+			</div>
+
+			<br>
+			<label for="provincia" id="provincia">Provincia</label>
+				<select name="select"> 
+					<option value="pcia1">Pcia1</option>
+					<option value="pcia2">Pcia2</option>
+					<option value="pcia3">Pcia3</option>
+					<option value="pcia4">Pcia4</option>
+					<option value="pcia5">Pcia5</option>					
+				</select> 	
+			
+			<br>
+
+			<label for="ciudad" id="ciudad">Ciudad</label>
+				<select name="select"> 
+					<option value="ciudad1">Ciudad1</option>
+					<option value="ciudad2">ciudad2</option>
+					<option value="ciudad3">ciudad3</option>
+					<option value="ciudad4">ciudad4</option>
+					<option value="ciudad5">ciudad5</option>					
+				</select> 	
+			<br>
+		</div>
+
+		<div id="genero">
+			<label for="genero">Género</label>
+			<br>				
+			<input type="radio" name="genero" value="f">Femenino
+			<input type="radio" name="genero" value="m">Masculino
+			<br>
+		</div>
+
+		<div class="deportes">
+			<label for="intereses">Deportes</label>
+			<br>
+			<input type="checkbox" name="depo1" value="1">Deporte 1
+			<br>
+			<input type="checkbox" name="depo2" value="2">Deporte 2
+			<br>
+			<input type="checkbox" name="depo3" value="3">Deporte 3
+			<br>	
+
+			<label for="altura">Altura</label>
+			<input type="text" id="altura" name="altura" placeholder="Altura">
+			
+			<label for="peso">Peso</label>
+			<input type="text" id="peso" name="peso" placeholder="Peso">
+		
+
+		</div>
+		
+		<div id="finales">
+			<label for="tel">Teléfono</label>
+			<input type="text" id="tel" name="tel" placeholder="Ingrese un teléfono">
+		
+			<label for="email">Email</label>
+			<input type="text" id="nombre" name="Escribe tu email" placeholder="Escriba su email" class="obligatorio">
+			<br>
+			<label for="observaciones">Observaciones</label>
+			<br>
+			<textarea type="textarea" id="observaciones" name="observaciones" placeholder="Ingrese texto"></textarea>
+
+	</form>
+	
+	<div class="boton">
+		<button name="enviar" id="enviar" value="enviar">Enviar</button>
+		<button id="clear">Limpiar</button>
+	</div>
+
+
+
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+*{
+    margin:auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+.main{
+    width: 40%;
+    margin-top: 20px;
+    background: #fff9db;
+    padding-bottom: 1em;
+
+}
+
+label {
+    display: block;
+    background: tomato;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+#centrarInput {
+    text-align:center;
+}
+
+#tarea {
+    width: 75%;
+    line-height: 26px;
+    font-size:15px;
+}
+
+#muroTareas ul li {
+    list-style:none;
+    margin: 2em 1.8em;
+}
+
+#btn {
+    background-color: tomato;
+    padding: 7px 23px;
+    color:white;
+    border:0;
+    border-radius: 4px;
+    font-size: 12px;
+    font-size:15px;
+  }
+
+#btn:hover{
+    background: #f03e3e;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin: 0px 20px;
+  }
+  
+  input[type="checkbox"]:hover {
+    cursor: pointer;
+  }
