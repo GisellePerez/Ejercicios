@@ -3,10 +3,10 @@ var btnEnviar = document.getElementById('enviar');
 var btnLimpiar = document.getElementById('clear');
 
 var ciudades = [
-				{"nombre":"Bahía Blanca","provincia":1},
-				{"nombre":"Villa Crespo","provincia":0},
-				{"nombre":"Chivilcoy","provincia":1}
-			];
+		{"nombre":"Bahía Blanca","provincia":1},
+		{"nombre":"Villa Crespo","provincia":0},
+		{"nombre":"Chivilcoy","provincia":1}
+		];
 
 /**
 * función para que pida completar campos
