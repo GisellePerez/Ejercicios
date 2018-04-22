@@ -44,10 +44,10 @@ if (puntos>=x) {
 
 	if (premium){
 		var monto = diferencia / 5;
-		console.log("Total a pagar: "+monto)
+		console.log("Total a pagar: "+monto);
 	}else{
 		monto = diferencia / 3;
-		console.log("Total a pagar: "+monto)
+		console.log("Total a pagar: "+monto);
 	}
 }
 */
@@ -82,7 +82,7 @@ if(distancia>=10){
 
 //Ejercicio 3
 
-tarjeta="Amex";
+var tarjeta="Amex";
 
 if(tarjeta === "Mastercard"){
 	console.log("Tarjeta Mastercar: hasta 6 cuotas sin interés.");
@@ -91,31 +91,27 @@ if(tarjeta === "Mastercard"){
 }else if(tarjeta === "Amex"){
 	console.log("Tarjeta Amex: hasta 3 cuotas sin interés.");
 }else{
-	console.log("Todas las demás: 1 cuotas sin interés.");
+	console.log("Todas las demás: 1 cuota sin interés.");
 }
 
+//Ejercicio 3 con switch
 
-/* no me salió con switch - preguntar porqué
-if (tarjeta) {
+switch (tarjeta) {
 
-	switch (tarjeta) {
-
-		case 1: tarjeta = "Mastercard";
-		console.log("Tarjeta Mastercar: hasta 6 cuotas sin interés.")
+		case "Mastercard":
+			console.log("*Tarjeta Mastercar: hasta 6 cuotas sin interés.");
 		break;
 
-		case 2: tarjeta = "Visa";
-		console.log("Tarjeta Visa: hasta 9 cuotas sin interés.")
+		case "Visa":
+			console.log("*Tarjeta Visa: hasta 9 cuotas sin interés.");
 		break;
 
-		case 3: tarjeta = "Amex";
-		console.log("Tarjeta Visa: hasta 3 cuotas sin interés.")
+		case "Amex":
+			console.log("*Tarjeta Amex: hasta 3 cuotas sin interés.");
 		break;
 
-		default: tarjeta = 0;
-		console.log("Todas las demás: 1 cuotas sin interés.")
+		default:
+			console.log("*Todas las demás: 1 cuota sin interés.");
 		break;
 
-	}
 }
-*/

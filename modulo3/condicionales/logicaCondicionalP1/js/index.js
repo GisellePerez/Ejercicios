@@ -14,40 +14,34 @@ la semana corresponde. Incluir la opción si la variable toma un valor no válid
 ejemplo 0 u 8). */
 
 
-var dia = 5;
+var dia = 8;
 
-if (dia){	
-	
 	switch (dia) {
 
-		case 1: 
-			dia = "Lunes";
+		case 1:
+			console.log("Lunes");
 			break; 
-		case 2: 
-			dia = "Martes";
+		case 2:
+			console.log("Martes");
 			break;
-		case 3: 
-			dia = "Miercoles";
+		case 3:
+			console.log("Miercoles");
 			break;
-		case 4: 
-			dia = "Jueves";
+		case 4:
+			console.log("Jueves");
 			break;
-		case 5: 
-			dia = "Viernes";
+		case 5:
+			console.log("Viernes");
 			break;
-		case 6: 
-			dia = "Sabado";
+		case 6:
+			console.log("Sabado");
 			break;
-		case 7: 
-			dia = "Domingo";
+		case 7:
+			console.log("Domingo");
 			break;
-		default: 
-			dia = "invalido";
+		default:
+			console.log("No es un día válido");
 			break;
-	
-		}
-	console.log("El día es "+dia);
-
 }
 
 
@@ -109,76 +103,51 @@ if (esta) {
 
 var esta = nombres.indexOf(x);
 if (esta = -1){
-	console.log("Lalo está");
+	console.log("Lalo está (con indexOf)");
 }
-
-
-
-
 
 
 /* 3- Dada una variable donde se ingresa el nombre del mes, devolver la cantidad de días 
 correspondiente.*/
 
-
-var treinta = 30;
-var treintaYUno = 31;
-var veintiOcho = 28;
-var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
-var ingresoMes = "Enero";
-
-if (ingresoMes)  {
+var mes = "febrero";
 	
-	switch (ingresoMes) {
+	switch (mes){ /*variable a examinar segun el valor que tiene*/
+		case "enero": 
+		case "marzo": 
+		case "mayo":
+		case "julio":	
+		case "agosto":	
+		case "octubre":
+		case "diciembre":	
+			console.log(mes+" tiene 31 días");
+		break;
+		
+		case "abril":
+		case "junio":
+		case "septiembre":
+		case "noviembre":
+			console.log(mes+" tiene 30 días");
+		break;
 
-		case 1: 
-			ingresoMes = "Enero";
-			break; 
-		case 2:
-			ingresoMes = "Febrero";
-			break;
-		case 3: 	
-			ingresoMes = "Marzo";
-			break;
-		case 4: 	
-			ingresoMes = "Abril";
-			break;
-		case 5: 
-			ingresoMes = "Mayo";
-			break;
-		case 6: 
-			ingresoMes = "Junio";
-			break;
-		case 7: 
-			ingresoMes = "Julio";
-			break; 
-		case 8: 
-			ingresoMes = "Agosto";
-			break;
-		case 9: 
-			ingresoMes = "Septiembre";
-			break;
-		case 10: 
-			ingresoMes = "Octubre";
-			break; 
-		case 11: 
-			ingresoMes = "Noviembre";
-			break;
-		case 12: 
-			ingresoMes = "Diciembre";
-			break;
+		case "febrero": 
+			console.log(mes+" tiene 28 días");
+		break;
+
+		default: 
+			console.log("no es un mes válido");
+		break;
 	}
-}
 
 //4- Dados 3 numeros, determinar si son positivos o negativos 
 
-var numeros = [-1,-2,-3]
+var numeros = [1,-2,3];
 
 for(i = 0; i < numeros.length ; i++){
 	if(numeros[i] > 0){
-		console.log("Son positivos");
+		console.log("El numero "+numeros[i]+" es positivo");
 	}else{
-		console.log("Son negativos");
+		console.log("El numero "+numeros[i]+" es negativo");
 	}
 }
 
@@ -192,10 +161,8 @@ if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"
 	console.log(letra+" es una consonante.")
 }
 
-
-
-//6
-
+//6 Dados tres números, x y z, si x es mayor que y calcular la resta entre x y z, y determinar 
+//si eso es mayor que y, de lo contrario sumar x y z (x+z) y multiplicarlo por y. 
 
 x = 100
 y = 98
@@ -236,8 +203,6 @@ var x,y,z,w;
 		}
 
 	}
-
-
 */
 
 // 7 
