@@ -1,4 +1,5 @@
-
+var tareaFocus = document.getElementById("tarea"); // trae el texto del input
+tareaFocus.focus(); // enfoca por defecto el input (para no tener que clickear)
 
 function publicarTareas(){
     
@@ -6,7 +7,7 @@ function publicarTareas(){
     var tareas = document.getElementById('tarea');
     var muroTareas = document.getElementById('muroTareas');
 
-    if(tarea.value){ //para que no publique con el input vacio, pero no funcionó
+    if(tareas.value !== " "){ //para que no publique con el input vacio, pero no funcionó
 
         var listItem = document.createElement('li');
         var itemText = document.getElementById('tarea').value;
@@ -20,6 +21,7 @@ function publicarTareas(){
         var borrar = document.createElement('input'); // Botón "Eliminar"
         borrar.type = "button"; // Asigno type="button"
         borrar.value = "x";
+        /*borrar.innerHTML = "<i class='far fa-times-circle'></i>";*/
         borrar.classList.add('btnBorrar');
         
         var ul = document.createElement('ul');
@@ -29,20 +31,24 @@ function publicarTareas(){
 
         listItem.textContent = itemText; //haba puesto itemText.value y no funcionaba. Corregido
 
+        document.getElementById('tarea').value = " "; //para limpiar
+        //console.log(itemText);
+        tareaFocus.focus();
+
+        borrar.addEventListener("click", eliminarTarea);
+		
+		function eliminarTarea() {
+			ul.remove();
+        }
         // appendeo 
         divCheck.appendChild(checkbox);
         divCheck.appendChild(listItem);        
         ul.appendChild(divCheck);
-        //ul.appendChild(listItem);
         ul.appendChild(borrar);    
-        muroTareas.appendChild(ul);
-
-        document.getElementById('tarea').value = " "; //para limpiar
-        //console.log(itemText);
+        muroTareas.appendChild(ul); 
     }
     
 }
-
 
 
 var btnAdd = document.getElementById('btn'); 

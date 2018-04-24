@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Form</title>
+</head>
+<body>
+    <form action="" id="formulario" method="post">
+        <div id="nameDiv">
+            <label for="" >Nombre</label>
+            <input type="text" id="name" placeholder="Nombre">
+            <label class="error"></label>
+        </div>
+
+        <div id="surnameDiv">
+            <label for="">Apellido</label>
+            <input type="text" id="surname" placeholder="Apellido">
+            <label class="error"></label>
+        </div>
+
+        <div id="mailDiv">
+            <label for="">Email</label>
+            <input type="text" id="email" placeholder="Email">
+            <label class="error"></label>
+        </div>
+
+        <div id="generoDiv">
+            <label>Elegí película</label>
+            <input type="checkbox" class="genero" name="genero">
+            <label>Comedia</label>
+            <input type="checkbox" class="genero" name="genero">
+            <label>Romance</label>
+            <input type="checkbox" class="genero" name="genero">
+            <label>Terror</label>
+            <input type="checkbox" class="genero" name="genero">
+            <label>Drama</label>
+        </div>
+        <div id="btn">
+            <input type="reset" name="Limpiar" value="Limpiar" id="limpiar">
+            <button id="alquilar">Alquilar</button>
+        </div>
+    </form>
+    <div id="errores"></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
