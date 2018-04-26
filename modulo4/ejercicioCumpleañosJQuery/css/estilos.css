@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+   text-align: center;
+   margin: 1em;
+}
+.container{
+    margin:0 auto;
+    width: 80%;
+    font-family:sans-serif;
+}
+
+.inputs{
+    display:flex;
+    justify-content: center;
+}
+.inputs input{
+    margin:0 4em;
+    width: 200px;
+    height: 28px;
+    border-radius: 2px;
+    border:1px solid grey;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 0;
+}
+
+.galeria img{
+    width: 200px;
+    height: 200px;
+}
+
+.btn{
+    text-align: center;
+}
+#btnGuardar{
+    padding: 8px 20px;
+}
