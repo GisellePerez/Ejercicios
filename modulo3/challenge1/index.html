@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge1</title>
+    <style>@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');</style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="izq">
+            <h1>Elige tu mejor opción de almuerzo</h1>
+
+            <form action="" id="form">
+                <div>
+                    <label for="">Plato Principal</label> 
+                    <select name="ppal" id="principal">
+                        <option disabled selected hidden>Selecciona una opción</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Guarnición</label>  
+                    <select name="guarn" id="guarnicion" value="Selecciona una opción">
+                        <option disabled selected hidden>Selecciona una opción</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Postre</label> 
+                    <select name="pstr" id="postre" value="Selecciona una opción">
+                        <option disabled selected hidden>Selecciona una opción</option>
+                    </select> 
+                </div>
+
+                <div>
+                    <input type="button" id="btnConfirmar" value="Confirmar"> 
+                </div>
+            </form>
+        </div>
+
+        <aside class="menuFinal">
+            <h2>Tu almuerzo</h2>
+            <div id="menuElegido">
+                <ul></ul>
+            </div>
+         </aside>
+        
+    </div>   
+
+    <script src="js/index.js"></script>
+</body>
+</html>
