@@ -29,23 +29,34 @@ function cagarOpciones(){
 }
 
 function mostrarMenu(){
-    var menuElegido = document.getElementById('menuElegido'); 
-      
-    var seleccionTotal = [principal, guarnicion, postre];
-    console.log(seleccionTotal);
-    
-    for(var i = 0; i < seleccionTotal.length; i++){
 
-        /*//necesito crear una orden que tome el texto de los select y no los selects enteros
-        Esta opcion no funcionó
-        var selectedValue = seleccionTotal[i].options[seleccionTotal[i].selectedIndex].value;
-        //Creamos un nodo de texto que agregaremos al div.
-        var selectedValueNode = document.createTextNode(selectedValue);
-        */
-        
-        menuElegido.appendChild(seleccionTotal[i]);
-    }
+    var menuElegido = document.getElementById('menuElegido');       
+    var seleccionTotal = [principal, guarnicion, postre];
+    //var selected = seleccionTotal[i].options[seleccionTotal[i].selectedIndex].text;
+    //console.log(seleccionTotal);    
     
+        for(var i = 0; i < seleccionTotal.length; i++){
+
+            var selects = document.getElementsByTagName('select');
+            var selected = seleccionTotal[i].options[seleccionTotal[i].selectedIndex].text;
+
+            if (selected != 'Selecciona una opción'){ //buscar método menos duro
+
+                var selectedValueNode = document.createTextNode(selected);
+                var div = document.createElement('div');
+                div.classList.add('foodDiv');
+                //No toma las clases :(
+                //selectedValueNode.classList.add("selectedFoodClass");
+                //selected.classList.add("food");
+                
+                div.appendChild(selectedValueNode)
+                menuElegido.appendChild(div);
+                console.log(selectedValueNode);
+                
+            }
+                
+        }
+ 
 }
 
 cagarOpciones();
