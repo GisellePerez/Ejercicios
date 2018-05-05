@@ -11,6 +11,9 @@ h1{
     margin:0 auto;
     width: 80%;
     font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .inputs{
@@ -25,15 +28,20 @@ h1{
     border:1px solid grey;
 }
 
-.galeria{
+.fila{
     display: flex;
     justify-content: space-between;
     margin: 4em 0;
 }
 
-.galeria img{
+.fila img{
     width: 200px;
     height: 200px;
+}
+
+.verCumples{
+    text-align: center;
+    margin-top: 2em;
 }
 
 .btn{

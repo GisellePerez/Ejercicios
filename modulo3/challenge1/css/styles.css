@@ -58,7 +58,10 @@ form div select, form div input {
 
 aside{
     width:36%;
-    background-color: rgb(240, 191, 255);
+    height:300px;
+    /*background-color: rgb(240, 191, 255);*/
+    /*border-left: 2px solid #9c36b5;*/
+    box-shadow:  3px 3px 8px #f2d2fa;
     padding: 1em;
 }
  aside h2{

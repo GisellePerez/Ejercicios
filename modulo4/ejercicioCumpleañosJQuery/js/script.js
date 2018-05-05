@@ -1,10 +1,24 @@
 var container = $('.container');
 var btnGuardar = $('#btnGuardar');
+
 //json
 var jsonDatos; //la declaramos y nada más
-var cumples = [];
+var cumples = []; //cumples es un array de objetos literales
+
+//localStorage.clear(); //descomentar para poder  limpiar el localStorage y que borre cosas
 
 var datosGuardados = localStorage.getItem('cumples');
+//datos guardados es un string con un json adentro
+
+if(datosGuardados == null){
+    //si es null create la variable cumples, prque es la primera vez que entro a la pag
+    cumples = [];
+}else{
+    //ya tengo cumpleaños guardados en cumples(cumples es un array)
+    cumples = JSON.parse(datosGuardados).cumples;
+    //parse toma una string json y lovuelve al estado de objeto
+}
+
 console.log(datosGuardados);
 
 //que lo que estamos guardando quede en un objeto literal nombre, fechaNac e img
@@ -45,7 +59,7 @@ console.log(datosGuardados);
         let data = JSON.stringify(jsonDatos);
         localStorage.setItem('cumples',data);
         
-
+        //forEach para limpiar los campos 
         var input = $('input');
         $.each(input, function(indice, elemento){
             if (elemento.type != 'button'){

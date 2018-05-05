@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicios-JQuery</title>
+    <style>@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900');</style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Formulario de inscripción</h1>
+        </header>
+        <form action="" id="myForm">
+            <div class="col">
+                <label for="" class="lbl">Nombre</label>
+                <input type="text" id="name" class="obligatorio" placeholder="Nombre">
+                <label for="" class="obLabel error"></label>
+            </div>
+            <div class="col">
+                <label for="" class="lbl">Apellido</label>
+                <input type="text" id="lastName" class="obligatorio" placeholder="Apellido">
+                <label for="" class="obLabel error"></label>
+            </div>
+            <div class="col">
+                <label for="" class="lbl">Fecha de nacimiento</label>
+                <input type="date" id="birthday" class="obligatorio" placeholder="Fecha de nacimiento">
+                <label for="" class="obLabel error"></label>
+            </div>
+            <div class="doc">
+                <div class="col">
+                    <label for="" class="lbl">Tipo de documento</label>
+                    <select name="" id="docType" class="obligatorio" value="">
+                        <option value="" disabled selected hidden>Tipo de documento</option>
+                    </select>
+                    <label for="" class="obLabel error"></label>
+                </div>
+                <div class="col">
+                    <label for="" class="lbl">Nro de documento</label>
+                    <input type="text" id="docType" class="obligatorio" placeholder="Nro de documento">
+                    <label for="" class="obLabel error"></label>
+                </div>
+            </div>
+            <div class="col">
+                <label for="" class="lbl">Observaciones</label>
+                <input type="text" id="obs" class="obligatorio" placeholder="Observaciones">
+                <label for="" class="obLabel error"></label>
+            </div> 
+            <div class="col">
+                <input type="button"  id="btn" value="Enviar">
+            </div>   
+        </form>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+body{
+    background-color: #495057;
+}
+.main{
+    margin: 0 auto;
+    width: 35%;
+}
+
+header{
+    margin-top: 2em;
+    background-color:#ff8787;
+    text-align: center;
+    padding:0.5em 0;
+}
+
+h1,.lbl{
+    color: white;
+}
+
+/*PROBANDO COMO QUEDA*/
+.lbl{
+    display: none;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1em 0;
+   
+}
+
+.doc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.doc div{
+    width: 48%;
+    margin: 0;
+}
+
+.col input{
+    border-radius: 2px;
+    border: 1px solid #ff8787;
+    padding: 10px;
+    font-size:15px;
+    text-transform: uppercase;
+    background-color: #495057;
+}
+::placeholder{
+    color:white;
+}
+
+/*
+#obs::placeholder{
+   no me da bola el placeholder para subirse
+}
+*/
+
+::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-text { 
+    color:  white; 
+}
+
+.col select{
+    border-radius: 2px;
+    border: 1px solid #ff8787;
+    padding: 9px;
+    font-size:15px;
+    text-transform: uppercase;
+    background-color: #495057;
+    color:  white;
+}
+.col select option {
+    color: white;
+}
+
+.col select option:not(:checked) { 
+    color:white;
+    margin: 1em 0;
+}
+
+input, select, textarea{ /*para que lo que ingreso sea color blanco*/
+    color: #ffffff;
+}
+#obs{
+    height: 100px;
+}
+
+#btn{
+    background-color:  #ff8787;
+    color: white;
+    text-transform: uppercase;    
+    font-size: 18px;
+}
+
+#btn:hover{
+    background-color:#f03e3e;
+    border: 1px solid #f03e3e;
+}
+.error{
+    color:#ff5353;
+    font-weight:800;
+}
