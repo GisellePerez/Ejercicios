@@ -10,8 +10,8 @@ function loadDocType(){
 }
 
 function requiredFields(){
-    var required = $('.obligatorio');
-    var obLabels =$('.obLabel');
+    let required = $('.obligatorio');
+    let obLabels =$('.obLabel');
     //console.log(required); 
 
     for(var i = 0 ; i < required.length ; i++){
@@ -27,11 +27,17 @@ function requiredFields(){
 
 function validate(){
 
-    function validateName(){
-        let name = $('#name').val();
-        let surname = $('#surname').val();
-        let error = $('.error');
+    console.log('hola');
 
+   // function validateName(){
+
+        var name = $('#name').val();
+        var surname = $('#lastName').val();
+        let error = $('.error');
+        console.log(name);
+        console.log(surname);
+
+        /*
         if(name != ' '){
             name.keyup(function(){
 
@@ -42,12 +48,17 @@ function validate(){
                 //$( "p" ).text("Hay un total de "+total+" carácteres ");
                     error.innerHTML('NOMBRE DEMASIADO LARGO');
                 }
-        } 
-    }
+        } */
+  //  }
 }   
         
 
 
 loadDocType();
 
-$('#btn').on('click',requiredFields);
+
+$('#btn').click(function(){
+    requiredFields();
+    validate();
+}); 
+
