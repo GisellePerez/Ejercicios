@@ -106,7 +106,13 @@ input, select, textarea{ /*para que lo que ingreso sea color blanco*/
     background-color:#f03e3e;
     border: 1px solid #f03e3e;
 }
-.error{
+.error, .obLabel{
     color:#ff5353;
     font-weight:800;
 }
+
+#errorName, #errorMail{
+    color:plum;
+    font-weight:800;
+}
+
