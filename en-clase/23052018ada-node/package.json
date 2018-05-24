@@ -1,0 +1,11 @@
+{
+  "name": "23052018ada-node",
+  "version": "1.0.0",
+  "description": "esto es un ejemplo de node con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giselle Perez <giselleperez91@gmail.com>",
+  "license": "ISC"
+}

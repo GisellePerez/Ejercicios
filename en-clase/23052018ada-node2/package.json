@@ -1,0 +1,15 @@
+{
+  "name": "23052018ada-node2",
+  "version": "1.0.0",
+  "description": "node con express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giselle Perez <giselleperez91@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
