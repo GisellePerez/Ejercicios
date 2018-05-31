@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div.main
+    h1= title
+    div(class=divColor)
+        ul
+            each val in names
+                li= val
