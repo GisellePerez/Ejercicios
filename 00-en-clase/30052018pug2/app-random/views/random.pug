@@ -1,0 +1,9 @@
+extends layout
+
+block content
+
+  if number
+    h1 #{title}
+    div.winner  #{number}
+  else 
+    h1 #{error}

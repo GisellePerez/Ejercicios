@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  h1 #{title}
+  div.saludo  Bienvenido a #{message}
+  div.veggies 
+    p Lista de vegetales
+    ul 
+      for vegetal in vegetales
+        li=vegetal
+
