@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  div
+    ul
+      each val, index in {1:'one',2:'two',3:'three'}
+          li= index + ': ' + val
+    
+    //-ul
+      each val, index in personas
+          li= index + ': ' + val
