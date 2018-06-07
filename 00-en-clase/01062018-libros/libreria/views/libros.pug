@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	h1 #{title}
+	for libro in libros
+		div.book
+			img(src=libro.img)
+			h2=libro.titulo
+			p=libro.isbn
+			//button(data-id=libro.isbn) borrar
+			a(href='/libros/delete/'+libro.isbn) borrar
+			a(href='/libros/'+libro.isbn) ver detalle
+	form(method='POST' action='/libros/agregar')
+		label(for='title') Titulo:
+		input#inputTitle(type='text' name='title')
+		p#obTitle
+		label(for='isbn') ISBN:
+		input#inputISBN(type='text' name='isbn')
+		p#obIsbn
+		label(for='isbn') Precio:
+		input#inputPrecio(type='text' name='precio')
+		p#obPrecio
+		label(for='imagen') Imagen:
+		input#inputImg(type='text' name='imagen')
+		p#obImg
+		button#agregar(type='button') Nuevo

@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div.container
+    header
+      div.buscador
+        a(href='') Mi cuenta/Registrarse
+        input#buscador(type='text')
+        input#lupa(type='submit')
+        a#linkCarrito(href="") Carrito
+          img#iconCarrito
+      nav
+        a(href="") Home
+        a(href="") Conocenos
+        img#logoHome(src="images/logo.png", alt="")
+        a(href="") Cómo comprar
+        a(href="") Contacto
+      div.imgHeader
+        img(src="images/Titulo_izquierda.png", alt="")
+        img(src="images/Titulo_derecha.png", alt="")
+      section#destacados
+          div.principal 
+              destacado
+          .favoritos    
+          each favorito, index in favoritosArray
+            li= index + ': ' + favorito  
