@@ -4,23 +4,33 @@ block content
   div.container
     header
       div.buscador
-        a(href='') Mi cuenta/Registrarse
-        input#buscador(type='text')
-        input#lupa(type='submit')
-        a#linkCarrito(href="") Carrito
-          img#iconCarrito
+        div
+          a(href='') Mi cuenta/Registrarse
+        div
+          input#buscador(type='text')
+          input#lupa(type='submit')
+          a#linkCarrito(href="") Carrito
+            img#iconCarrito
       nav
-        a(href="") Home
-        a(href="") Conocenos
-        img#logoHome(src="images/logo.png", alt="")
-        a(href="") Cómo comprar
-        a(href="") Contacto
+        div.menuIzq
+          a(href="") Home
+          a(href="") Conocenos
+        div.logo
+          img#logoHome(src="images/logo.png", alt="")
+        div.menuDer
+          a(href="") Cómo comprar
+          a(href="") Contacto
       div.imgHeader
         img(src="images/Titulo_izquierda.png", alt="")
         img(src="images/Titulo_derecha.png", alt="")
       section#destacados
           div.principal 
-              destacado
-          .favoritos    
+            img.discoRandom(src=favoritosArray[0].src)
+          div.favoritos    
           each favorito, index in favoritosArray
-            li= index + ': ' + favorito  
+            if index>0 && index<3
+              div
+                img.discosDiv(src=favorito.src) 
+            if index>3
+              div
+                img.discosDiv(src=favorito.src)

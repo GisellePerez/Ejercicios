@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= libro.nombre
+  figure
+    img(src= '../'+libro.src)
+    figcaption= libro.codigo
+  

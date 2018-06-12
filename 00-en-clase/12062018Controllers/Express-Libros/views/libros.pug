@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    for libro in librosArray
+        li
+            figure
+                img(src=libro.src)
+                figcaption= libro.precio
+                figcaption= libro.info
+                a(href='libros/'+libro.codigo) Detalles
+            div#boton
+                //button(class='borrar' data-id=libro.codigo) Borrar
+                //button(class='editar' data-edit=libro.codigo) Editar
+                a(href='/libros/delete/'+libro.codigo) Borrar
+    form(method='POST' action='/libros/agregar')
+        label(for='title') Titulo:
+        input(
+    type='text'
+    name='title'
+)
+        label(for='isbn') ISBN:
+        input(
+    type='text'
+    name='isbn'
+)
+        label(for='precio') Precio:
+        input(
+    type='text'
+    name='precio'
+)
+        label(for='imagen') Imagen:
+        input(
+    type='text'
+    name='imagen'
+)
+        button(type='submit' id='agregar') Nuevo

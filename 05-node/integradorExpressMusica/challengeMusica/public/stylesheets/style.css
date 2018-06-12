@@ -1,9 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: bisque;
 }
-
+.buscador{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: right;
+}
 a {
-  color: #00B7FF;
+  color: #FFF;
+  font-size: 16px;
+  text-decoration: none;  
+}
+
+.discosDiv, .discoRandom{
+  border-radius: 50%;
+}
+
+#destacados{
+  display: flex;
+}
+.favoritos{
+  display: flex;
+  flex-wrap: wrap;
+}
+.discosDiv{
+  width: 200px;
 }
