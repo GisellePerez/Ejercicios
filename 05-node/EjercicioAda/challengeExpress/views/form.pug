@@ -4,24 +4,24 @@ block content
   h1= title
   form(action="/user" method="post")
     div.inputs
-        label(for="") Name
+        label(for="name") Name
         br 
-        input#name(type="text")
+        input#name(type="text" name="name")
         label#obName
     div.inputs
-        label(for="") Last name
+        label(for="lastName") Last name
         br 
-        input#lastName(type="text")
+        input#lastName(type="text" name="lastName")
         label#obLastName
     div.inputs
-        label(for="") Tel 
+        label(for="tel") Tel 
         br
-        input#tel(type="text")
+        input#tel(type="text" name="tel")
         label#obTel
     div.inputs
-        label(for="") Email
+        label(for="email") Email
         br 
-        input#email(type="text")
+        input#email(type="text" name="email")
         label#obEmail
     .btnDiv
         input#btn(type="submit" value="Submit")

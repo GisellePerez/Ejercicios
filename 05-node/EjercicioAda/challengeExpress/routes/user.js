@@ -8,24 +8,22 @@ var userList = [
 ];
 
 router.get('/', function(req,res,next){ 
-    res.send('estoy en /user');   
+    let data = req.body;
+    console.log('data',data);
+    res.send('estoy en /user GET');   
 });
 
-router.post('/', function(req, res, next) { 
-    res.redirect('/user/form')
-  //recibe la info que se pasa por el .post de user/form
-  //redireccionar a user/list
+router.post('/', function(req, res, next) {  
+    //recibe la info que se pasa por el .post de /user/form  
+    userList.push(req.body);
+    console.log('user list:',userList);
+    //redireccionar a /user/list 
+    res.redirect('/user/list');
 });
 
 router.get('/form', function(req,res,next){
-    //rendeiza el formulario y el boton
-    // $('#btn').on('click', function(){
-    //     validateData();
-    //     res.redirect('/user');
-    // });   
-    
+    //renderiza el form y el boton    
     res.render('form', { title: 'Form'})
-    
 });
 
 router.get('/list', function(req,res,next) {

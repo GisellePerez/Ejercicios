@@ -1,5 +1,5 @@
-function validateData(e){
-    e.preventDefault();
+function validateData(){
+    console.log('lalalalalalalalal')
     if ($('#name').val() == '' ){
         console.log('complete todos los campos');
     }
