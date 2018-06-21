@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  div.user 
+    for user in users
+        ul
+            li=user.name
+            li=user.lastName
+            li=user.tel
+            li=user.email

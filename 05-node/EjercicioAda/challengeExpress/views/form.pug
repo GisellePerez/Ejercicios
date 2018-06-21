@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+  form(action="/user" method="post")
+    div.inputs
+        label(for="") Name
+        br 
+        input#name(type="text")
+        label#obName
+    div.inputs
+        label(for="") Last name
+        br 
+        input#lastName(type="text")
+        label#obLastName
+    div.inputs
+        label(for="") Tel 
+        br
+        input#tel(type="text")
+        label#obTel
+    div.inputs
+        label(for="") Email
+        br 
+        input#email(type="text")
+        label#obEmail
+    .btnDiv
+        input#btn(type="submit" value="Submit")
