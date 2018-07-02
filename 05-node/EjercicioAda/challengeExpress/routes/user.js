@@ -18,8 +18,7 @@ router.get('/', function(req,res,next){
 
 router.post('/', function(req, res, next) {  
     //recibe la info que se pasa por el .post de /user/form
-    
-    
+       
         //userList = []; //limpio la lista en cada vuelta en teoria
     
         let newUser = req.body;

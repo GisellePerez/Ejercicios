@@ -6,6 +6,9 @@ class App extends Component {
   render() {
 
     let greeting = 'Hello!';
+
+    let fruits = ['banana', 'apple', 'strawberry']
+
     return (
       <div className="App">
         <header className="App-header">
@@ -13,6 +16,12 @@ class App extends Component {
           <h1 className="App-title">Hello world!</h1>
         </header>
         <p className="App-intro">{greeting} I'm using React.js</p>
+
+        <ul className="fruits-list">
+          {fruits.map(function(val,index){
+            return <li>{index}. {val}</li>
+          })}
+        </ul>
       </div>
     );
   }

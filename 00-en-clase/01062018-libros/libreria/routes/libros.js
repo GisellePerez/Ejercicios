@@ -20,9 +20,7 @@ router.get('/', function(req, res, next) {
   res.render('libros', { title: 'Libreria de los sueños', libros: books});
 });
 
-router.get('/:isbn',function(req,res,next){
-
-	let isbn = req.params.isbn;
+rs
 	let libro = search(isbn);
 
 	if(libro){
