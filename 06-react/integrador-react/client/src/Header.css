@@ -1,0 +1,19 @@
+.Header {
+    background-color: rgb(10, 190, 106);
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+.Header h1, .Header h3 {
+    color: white;
+    padding: 0;
+    text-align: left;
+}
+.Icons{
+    margin-top: 2em;
+}
+.Icons a{
+    color: white;
+    font-size: 2em;
+    margin:0.2em;
+}
